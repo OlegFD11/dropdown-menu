@@ -1,0 +1,36 @@
+// settings
+
+$max-width-content: 144rem;
+$padding-mobile: 0 1.5rem;
+
+.container {
+  padding: $padding-mobile;
+  position: relative;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width-content;
+}
+
+// section
+
+$padding-section: 30rem 0;
+$height-section: 100vh;
+
+.section {
+  width: 100%;
+  max-width: 100%;
+  padding: $padding-section;
+  min-height: $height-section;
+}
+
+// wrap content inside section
+
+$display: flex;
+$layout: "adaptive";
+
+.wrap {
+  display: $display;
+}

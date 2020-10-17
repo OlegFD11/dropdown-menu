@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${ require('~/blocks/gtm/gtmstart.chunk.html') }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href='${ require("~/images/favicon.ico") }'
+    />
+  </head>
+
+  <body>
+    <div class="container">
+        ${ require('~/blocks/base/header.chunk.html') }
+        ${ require('~/blocks/home_page/screen.chunk.html') }
+        ${ require('~/blocks/base/footer.chunk.html') }
+      </div>
+    </div>
+    ${ require('~/blocks/gtm/gtmend.chunk.html') }
+  </body>
+</html>

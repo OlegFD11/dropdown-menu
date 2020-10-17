@@ -1,0 +1,24 @@
+// main settings
+
+@import "./global/reset.scss";
+@import "./global/grid.scss";
+@import "./global/fonts.scss";
+@import "./global/text.scss";
+@import "./global/animation.scss";
+
+// blocks
+
+@import "./blocks/text.scss";
+@import "./blocks/containers.scss";
+
+// header
+
+@import "./base/header/sections/header.scss";
+
+// footer
+
+@import "./global/footer.scss";
+
+// home page
+
+@import "./pages/home/sections/screen.scss";

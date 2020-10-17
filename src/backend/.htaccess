@@ -1,0 +1,6 @@
+#RewriteEngine On
+#HOSTING-VSubdom:assets.lirsoft.com
+#RewriteCond %{HTTP_HOST} assets\.lirsoft\.com$ [NC]
+#RewriteCond %{REQUEST_URI} !assets/.*$
+#RewriteRule ^(.*)$ assets/$1 [L]
+

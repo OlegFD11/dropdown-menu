@@ -1,0 +1,27 @@
+/*generate fonts*/
+///
+
+$fontName: ("DMSans-Bold",
+  "DMSans-BoldItalic",
+  "DMSans-Italic",
+  "DMSans-Medium",
+  "DMSans-MediumItalic",
+  "DMSans-Regular"
+);
+
+@each $font in $fontName {
+  @font-face {
+    font-family: "#{$font}";
+    src: url("./fonts/#{$font}/#{$font}.eot");
+    /* IE9 Compat Modes */
+    src: url("./fonts/#{$font}/#{$font}.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/#{$font}/#{$font}.woff2") format("woff2"),
+    url("./fonts/#{$font}/#{$font}.woff") format("woff"),
+    url("./fonts/#{$font}/#{$font}.ttf") format("truetype"),
+    url("./fonts/#{$font}/#{$font}.svg#svg#{$font}") format("svg");
+    /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
